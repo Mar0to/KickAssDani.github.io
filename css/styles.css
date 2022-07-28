@@ -88,3 +88,10 @@ h1{
     padding: 2px;
     border-color:#fff transparent #fff transparent;
 }
+.container-fluid{
+    position: absolute;
+    left: 50%; 
+    margin-top: 5rem;
+    transform: translateX(-50%);
+    width: 80%;
+}
