@@ -37,9 +37,10 @@ function changeImg(){
 function bodyDesing(){
     document.body.style.backgroundImage = "url('/img/bosque-con-niebla_2560x1440_6701.jpg')";
     this.document.body.style.backgroundRepeat = "no-repeat";
-    this.document.body.style.backgroundAttachment = "Fixed";
-    this.document.body.style.position = "relative";
-    this.document.body.style.width = "100%";
+    //this.document.body.style.backgroundAttachment = "Fixed";
+    this.document.body.style.position = "fixed";
+    this.document.body.style.width = "100vw";
+    this.document.body.style.height = "100vh";
     
 }
 
