@@ -35,13 +35,14 @@ function changeImg(){
 }
 
 function bodyDesing(){
-    document.body.style.backgroundImage = "url('/img/bosque-con-niebla_2560x1440_6701.jpg')";
-    this.document.body.style.backgroundRepeat = "no-repeat";
+
+    var bg = document.getElementById('bg');
+    bg.style.backgroundImage = "url('/img/bosque-con-niebla_2560x1440_6701.jpg')";
+    bg.style.backgroundRepeat = "no-repeat";
     //this.document.body.style.backgroundAttachment = "Fixed";
-    this.document.body.style.position = "fixed";
-    this.document.body.style.width = "100vw";
-    this.document.body.style.height = "100vh";
-    
+    bg.style.position = "fixed";
+    bg.style.width = "100vw";
+    bg.style.height = "100vh";
 }
 
 function carouseImg(){
