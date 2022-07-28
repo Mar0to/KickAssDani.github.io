@@ -5,9 +5,8 @@
 }
 
 body{
-   
     min-height: 200vh;
-    color: aliceblue;
+
 }
 img{
     width: 100%;
@@ -28,13 +27,12 @@ header .logo{
     margin-left: 10px;
     position: relative;
     font-weight: 700;
-    color: aliceblue;
+    color: black;
     text-decoration: none;
     font-size: 2em;
     text-transform: uppercase; /*colocar texto en mayúsculas*/
     letter-spacing: 2px;
     transition: 0.6s;
-    color: #fff;
     font-family: Macondo;
 
 }
@@ -66,9 +64,7 @@ header ul li a{
     position: relative;
     width: 100%;
     height: 100vh;
-    background: url(/img/finca.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
+   
 }
 
 
@@ -83,8 +79,7 @@ header ul li a{
     text-align: center;
     color: #fff;
 }
-
-.imagenBack .textocentrado h1{
+ .textocentrado h1{
     font-size: 5em;
 }
 
@@ -94,28 +89,3 @@ h1{
     padding: 2px;
     border-color:#fff transparent #fff transparent;
 }
-
-
-
-@media (max-width: 600px) {
-    
-    header .logo{
-        position: absolute;
-        left: 10%;
-        top: 40px;
-        font-size: 1.5em;
-        transition: 0.5s;
-    }
-
-    #menu{
-        visibility: hidden;
-        padding: 0%;
-        margin: 0%;
-        transition: 0.5s;
-    }
-    .imagenBack{
-        visibility: hidden;
-    }
-    
-}
-  
