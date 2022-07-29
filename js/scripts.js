@@ -2,10 +2,18 @@ window.addEventListener('load', function(){
     
     bodyDesing()
     carouseImg()
-    changeImg()
+    //changeImg()
+    //scrollY()
+    window.addEventListener('scroll', function(){
+        let value = this.window.scrollY;
+        //console.log(value+"px");
+        var y = this.document.getElementById('h1')
+        //y.style.borderRadius = value+"px";
+        y.style.marginLeft = value*6+"px";
+        console.log(value*-1.5+"px")
+    })
+    
 }, false)
-
-
 
 function showHover(imagenLogo){
     if (imagenLogo){
@@ -35,14 +43,12 @@ function changeImg(){
 }
 
 function bodyDesing(){
-
-    var bg = document.getElementById('bg');
-    bg.style.backgroundImage = "url('/img/bosque-con-niebla_2560x1440_6701.jpg')";
-    bg.style.backgroundRepeat = "no-repeat";
-    //this.document.body.style.backgroundAttachment = "Fixed";
-    bg.style.position = "fixed";
-    bg.style.width = "100vw";
-    bg.style.height = "100vh";
+    document.body.style.backgroundImage = "url('/img/bosque-con-niebla_2560x1440_6701.jpg')";
+    this.document.body.style.backgroundRepeat = "no-repeat";
+    this.document.body.style.backgroundAttachment = "Fixed";
+    this.document.body.style.position = "relative";
+    this.document.body.style.width = "100%";
+    
 }
 
 function carouseImg(){
@@ -53,5 +59,4 @@ function carouseImg(){
     var thirdImg = this.document.getElementById("thirdImg");
     thirdImg.src = 'img/gafas-de-sol-para-perros.jpg';
 }
-
 
