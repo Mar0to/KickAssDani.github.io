@@ -10,6 +10,7 @@ window.addEventListener('load', function(){
         var y = this.document.getElementById('h1')
         //y.style.borderRadius = value+"px";
         y.style.marginLeft = value*6+"px";
+        y.style.scrollBehavior = "smooth";
         console.log(value*-1.5+"px")
     })
     
