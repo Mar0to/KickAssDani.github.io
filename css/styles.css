@@ -6,7 +6,6 @@
 
 body{
     min-height: 100vh;
-    overflow-x: hidden;
 }
 
 header{
@@ -19,8 +18,8 @@ header{
     justify-content: space-between;
     align-items: center;
     transition: 0.6s;
-    z-index: 1;
-    background-color: rgba(29, 123, 206, 0.979);
+    z-index: 100;
+    background-color: rgba(10, 66, 116, 0.979);
 }
 
 header .logo{
@@ -66,15 +65,19 @@ header ul li a:hover, header ul li a.active{
     font-size: 1.5em;
     padding: 5px;
     border-radius: 10%;
+    
 }  
 
+
+
+
+
+/*Todo lo que tiene que ver con el texto centrado*/
 .imagenBack{
     position: relative;
     width: 100%;
     height: 100vh;
-   
 }
-
 
 .textocentrado{
     position: absolute;
@@ -85,14 +88,52 @@ header ul li a:hover, header ul li a.active{
     font-family: Macondo;
     transition: 1s;
     text-align: center;
-    color: #fff;
-}
- .textocentrado h1{
-    font-size: 5em;
+    color: red;
+    
 }
 
 h1{
     border: black 2px solid;
     padding: 2px;
-    border-color:#fff transparent #fff transparent;
+    border-color:#fff transparent;
+    font-size: 5em;
 }
+
+
+/*Aqui va una cosa*/
+
+.red{
+    position: absolute;
+    height: 100vh;
+    width: 51%;
+    left: -1%;
+    
+}
+.blue{
+    height: 100vh;
+    right: 0%;
+    width: 50%;
+    position: absolute;
+}
+
+
+/*Intentando animar las cosas*/
+
+.Contenido{
+    overflow: hidden;
+    height: 0;
+    width: 0;
+    padding: 0;
+    z-index: -100;
+    opacity: 0;
+    
+}
+.mostrarContenido{
+    margin-top: 100px;
+    overflow: visible;
+    animation: reverse;
+    z-index: -1;
+}
+
+
+
